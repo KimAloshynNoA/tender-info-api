@@ -7,7 +7,7 @@ using TenderInfoAPI.Exceptions;
 using TenderInfoAPI.Repositories;
 using Microsoft.Extensions.Logging;
 
-namespace TendersInfoApi.Tests.Services;
+namespace TenderInfoApi.Tests.Services;
 
 public class TenderServiceTests
 {

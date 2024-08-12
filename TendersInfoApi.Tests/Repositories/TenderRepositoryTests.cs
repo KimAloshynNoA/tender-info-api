@@ -7,7 +7,7 @@ using TenderInfoAPI.Repositories;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Caching.Memory;
 
-namespace TendersInfoApi.Tests.Repositories;
+namespace TenderInfoApi.Tests.Repositories;
 
 public class TenderRepositoryTests
 {
