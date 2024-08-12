@@ -25,7 +25,7 @@ Before you begin, ensure you have the following installed:
    Clone the repository to your local machine using Git:
 
    ```bash
-   git clone [clone url]
+   git clone https://github.com/KimAloshynNoA/tender-info-api.git
    cd tender-info-api
    ```
 
