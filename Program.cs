@@ -50,14 +50,21 @@ var app = builder.Build();
 
 app.UseMiddleware<ExceptionMiddleware>();
 
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Tender Info API v1");
+});
+
+app.Use(async (context, next) =>
+{
+    if (context.Request.Path == "/")
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Tender Info API v1");
-    });
-}
+        context.Response.Redirect("/swagger");
+        return;
+    }
+    await next();
+});
 
 app.UseHttpsRedirection();
 
