@@ -1,7 +1,7 @@
 
 # Tender Info API
 
-Tender Info API is a RESTful service that allows users to interact with tenders data. It supports filtering, sorting, and pagination of tenders, as well as retrieval of tenders by ID or by supplier.
+Tender Info API is a RESTful service that allows users to interact with tenders data from https://tenders.guru/pl/api. It supports filtering, sorting, and pagination of tenders, as well as retrieval of tenders by ID or by supplier.
 
 ## Table of Contents
 
